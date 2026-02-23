@@ -1,0 +1,156 @@
+{
+  "background": {
+    "color": "#070B14"
+  },
+  "atmosphere": {
+    "preset": "night",
+    "fogColor": "#0A1020",
+    "fogNear": 30,
+    "fogFar": 180,
+    "exposure": 0.92
+  },
+  "camera": {
+    "position": {
+      "x": 0,
+      "y": 9,
+      "z": 28
+    },
+    "lookAt": {
+      "x": 0,
+      "y": 2,
+      "z": 0
+    },
+    "fov": 62,
+    "enableControls": true
+  },
+  "lights": [
+    {
+      "type": "ambient",
+      "color": "#D8E7FF",
+      "intensity": 0.45
+    },
+    {
+      "type": "directional",
+      "color": "#FFFFFF",
+      "intensity": 0.95,
+      "position": {
+        "x": 8,
+        "y": 14,
+        "z": 12
+      }
+    }
+  ],
+  "threeJsLayer": [
+    {
+      "id": "wire-grid-floor",
+      "context": "threejs",
+      "type": "box",
+      "position": {
+        "x": 0,
+        "y": -2.8,
+        "z": 0
+      },
+      "size": {
+        "width": 22,
+        "height": 0.2,
+        "depth": 22
+      },
+      "material": {
+        "color": "#2AB3FF",
+        "wireframe": true,
+        "usePbr": false
+      }
+    },
+    {
+      "id": "wire-box",
+      "context": "threejs",
+      "type": "box",
+      "position": {
+        "x": -7,
+        "y": 2.5,
+        "z": 0
+      },
+      "rotation": {
+        "x": "{{ @vm.time.seconds * 0.5 }}",
+        "y": "{{ @vm.time.seconds * 0.9 }}",
+        "z": "{{ @vm.time.seconds * 0.3 }}"
+      },
+      "size": {
+        "width": 4.2,
+        "height": 4.2,
+        "depth": 4.2
+      },
+      "material": {
+        "color": "#00FFD1",
+        "wireframe": true,
+        "usePbr": false
+      }
+    },
+    {
+      "id": "wire-sphere",
+      "context": "threejs",
+      "type": "sphere",
+      "position": {
+        "x": 0,
+        "y": 3.0,
+        "z": 0
+      },
+      "rotation": {
+        "x": "{{ @vm.time.seconds * 0.4 }}",
+        "y": "{{ @vm.time.seconds * 0.7 }}"
+      },
+      "size": {
+        "radius": 2.7
+      },
+      "material": {
+        "color": "#FF8A00",
+        "wireframe": true,
+        "usePbr": false
+      }
+    },
+    {
+      "id": "wire-tall-box",
+      "context": "threejs",
+      "type": "box",
+      "position": {
+        "x": 7,
+        "y": 3.5,
+        "z": 0
+      },
+      "rotation": {
+        "x": "{{ @vm.time.seconds * 0.2 }}",
+        "y": "{{ @vm.time.seconds * 1.1 }}"
+      },
+      "size": {
+        "width": 2.4,
+        "height": 6.8,
+        "depth": 2.4
+      },
+      "material": {
+        "color": "#F72585",
+        "wireframe": true,
+        "usePbr": false
+      }
+    }
+  ],
+  "domLayer": [
+    {
+      "id": "wire-title",
+      "context": "dom",
+      "type": "div",
+      "position": {
+        "x": 18,
+        "y": 14
+      },
+      "properties": {
+        "text": "3D WIREFRAME DEMO"
+      },
+      "style": {
+        "color": "#E2E8F0",
+        "fontSize": 20,
+        "fontFamily": "monospace",
+        "fontWeight": "bold"
+      }
+    }
+  ]
+}

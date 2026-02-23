@@ -1,0 +1,15 @@
+{
+  "id": "wireframe-3d",
+  "name": "Wireframe 3d",
+  "description": "Exported from embedded Flutter VisMan demo scene \"wireframe-3d\".",
+  "tags": [
+    "3d",
+    "wireframe"
+  ],
+  "source": "flutter-embedded-demo",
+  "generatedAt": "2026-02-23T08:11:45.557246Z",
+  "sceneFile": "visman.json",
+  "objectCount": 5,
+  "hasPhysics": false,
+  "has3D": true
+}
