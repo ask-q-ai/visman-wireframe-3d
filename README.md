@@ -4,12 +4,12 @@ Exported scene package for ask-q VisMan GitHub marketplace.
 
 ## Files
 
-- `visman.json`: scene payload
+- `scene.yaml`: scene payload
 - `scene-meta.json`: metadata and derived scene stats
 
 ## Deep Link
 
-`https://use-q.ai/visman?repo=<owner>/<repo>&path=visman.json`
+`https://use-q.ai/visman?repo=<owner>/<repo>&path=scene.yaml`
 
 ## Notes
 

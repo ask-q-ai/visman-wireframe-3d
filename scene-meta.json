@@ -8,7 +8,7 @@
   ],
   "source": "flutter-embedded-demo",
   "generatedAt": "2026-02-23T08:11:45.557246Z",
-  "sceneFile": "visman.json",
+  "sceneFile": "scene.yaml",
   "objectCount": 5,
   "hasPhysics": false,
   "has3D": true
